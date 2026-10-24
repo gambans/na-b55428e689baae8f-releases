@@ -18,7 +18,7 @@ The updater authenticates pitchmachine-channel.json using its pinned Ed25519 pub
 
 Use the existing private release key with scripts/package_update.py from the private source project. Upload the versioned ZIP first and verify it matches the local archive. Then upload its signed versioned JSON and replace pitchmachine-channel.json with that exact signed JSON as the final publication step. Keep previous ZIPs available. Do not replace the pinned key after distributing this bootstrap version.
 
-## 0.9.15 packaging repair
+## 0.9.14 packaging repair
 
 The native AU build now writes Contents/PkgInfo before code signing. Finder recognizes Pitchmachine.component as a bundle rather than an ordinary folder. A native NSWorkspace package-recognition regression is included. DSP behavior is unchanged. Full native build and offline suites passed. The static update channel is active; Apple notarization and a complete Logic host test remain pending.
 
